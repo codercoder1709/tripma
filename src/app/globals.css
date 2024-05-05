@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:700,600,400");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-purple-blue{
+  background: #605DEC;
+}
+
+.text-purple-blue{
+  color: #605DEC;
+}
+
+.text-hover-color:hover{
+  color: #605DEC;
+}
+
+.text-grey-custom{
+  color: #7C8DB0;
+}
+
+.full-shadow{
+  box-shadow: 0 0 10px -1px #7C8DB0;
+}
+
+.medium-shadow{
+  box-shadow: 0 0 20px -6px #7C8DB0;
+}
+
+button {
+  white-space: nowrap;
+}
+
+.hide-scroller::-webkit-scrollbar{
+  display: none;
+}
+
+input[type=radio]{
+  accent-color: #605DEC;
+}
+
+input[type=checkbox]{
+  accent-color: #605DEC;
+}
+
+.Mui-focused{
+  color:#7C8DB0 !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: #605DEC !important;
+}
+
+.businessClass{
+  background: linear-gradient(180deg, #5CD6C0 0%, #22C3A6 100%);
+  width: 1.4vw;
+  height: 2vw;
+}
+
+.businessClass:hover{
+  background: #009B7F;
+  cursor: pointer;
+}
+
+.bookedBusinessClass {
+  background-color: #E9E8FC;
+  width: 1.4vw;
+  height: 2vw;
+  pointer-events: none;
+}
+
+.businessClassSelected{
+  background: linear-gradient(180deg, #EB568C 0%, #ED5E76 100%);
+  width: 1.4vw;
+  height: 2vw;
+  cursor: pointer;
+}
+
+.economyClass {
+  background: linear-gradient(180deg, #605DEC 0%, #2A26D9 100%);
+  width: 1vw;
+  height: 1.5vw;
+}
+
+.economyClass:hover{
+  background: #1513A0;
+  cursor: pointer;
+}
+
+.bookedEconomyClass{
+  background-color: #E9E8FC;
+  width: 1vw;
+  height: 1.5vw;
+  pointer-events: none;
+}
+
+.economyClassSelected{
+  background: linear-gradient(180deg, #EB568C 0%, #ED5E76 100%);
+  width: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px){
+  .businessClass{
+    width: 20px;
+    height: 30px;
+  }
+
+  .bookedBusinessClass {
+    width: 20px;
+    height: 30px;
+  }
+  
+  .businessClassSelected{
+    width: 20px;
+    height: 30px;
+  }
+
+
+  .economyClass {
+    width: 16px;
+    height: 24px;
+  }
+
+  .bookedEconomyClass{
+    width: 16px;
+    height: 24px;
+  }
+  
+  .economyClassSelected{
+    width: 16px;
+    height: 24px;
+  }
+}
+
+.purple-gradient {
+  background: linear-gradient(180deg, #605DEC 0%, #2A26D9 100%);
+}
+
+.green-gradient {
+  background: linear-gradient(180deg, #5CD6C0 0%, #22C3A6 100%);
+}
+
+.pink-gradient {
+  background: linear-gradient(180deg, #EB568C 0%, #ED5E76 100%);
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 400ms forwards;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 400ms; /* Adjust the duration as needed */
+  animation-iteration-count: 1;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.slide-in {
+  animation-name: slideIn;
+  animation-duration: 400ms; /* Adjust the duration as needed */
+  animation-iteration-count: 1;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0px);
+    display: block;
+  }
+  to {
+    transform: translateX(-1000px);
+    display: hidden;
+  }
+}
+
+.slide-out {
+  animation: slideOut 1s forwards;
+  animation-iteration-count: 1;
+}
+
+.custom-dropdown select {
+  appearance: none;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  background-image: url('../assets/icons/drop-down.svg'); /* Set your custom arrow image path */
+  background-repeat: no-repeat;
+  /* background-position: right center; */
+  padding-right: 20px; /* Adjust the padding to make space for the arrow */
+  cursor: pointer;
+}
+
+.custom-dropdown select::-ms-expand {
+  display: none; /* Hide the default arrow in IE/Edge */
+}
+/* Hide the scrollbar buttons for webkit browsers */
+.flights-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Additional styles for the scrollbar (optional) */
+.flights-scroll::-webkit-scrollbar {
+  width: 3px; /* Adjust the width as needed */
+  padding: 5px;
+}
+
+.flights-scroll::-webkit-scrollbar-thumb {
+  background-color: #88888866; /* Color of the scrollbar thumb */
+  border-radius: 12px;
+}
+
+.flights-scroll::-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the scrollbar track */
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #605DEC !important;
+}
+
+.MuiAutocomplete-clearIndicator{
+  display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.dob .MuiFormControl-root .MuiInputBase-formControl .MuiInputBase-inputAdornedEnd{
+  padding: 8px 14px !important;
+}
+
+@media (min-width: 100px){
+  .dob .MuiFormControl-root .MuiInputBase-formControl .MuiInputBase-inputAdornedEnd{
+    padding: 8px 14px !important;
+  }
+
+}
